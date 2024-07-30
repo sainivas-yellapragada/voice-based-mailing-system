@@ -6,4 +6,4 @@ def home(request):
     return render(request,'')
 
 def login_view(request):
-    return render(request, 'app/login.html')
+    return render(request,'app/login.html')

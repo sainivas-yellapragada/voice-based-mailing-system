@@ -129,6 +129,7 @@
   </style>
 </head>
 <body>
+    {% load socialaccount %}
   <div class="background">
       <div class="shape"></div>
       <div class="shape"></div>
@@ -144,7 +145,9 @@
 
       <button>Log In</button>
       <div class="social">
-        <div class="gmail"><i class="fab fa-google"></i>Sign in with Gmail</div>
+        <div class="gmail"><i class="fab fa-google">
+            <!--<a href="{% provider_login_url 'google'%}?next=/">-->
+        </i>Sign in with Gmail</div>
         <div class="outlook"><i class="fab fa-microsoft"></i>Sign in with Outlook</div>
       </div>
   </form>
